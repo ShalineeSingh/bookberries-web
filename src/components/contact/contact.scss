@@ -19,3 +19,18 @@
     }
   }
 }
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 600px;
+  margin: auto;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 600px;
+}

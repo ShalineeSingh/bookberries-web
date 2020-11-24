@@ -34,14 +34,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/logo-bg.png`, // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: `@ccalamos/gatsby-source-googlemaps-static`,
-      options: {
-        key: `gHfd15HTC3FO2qupcx4yvLgT-xs=`,
-        center: `Patna, Bihar`,
-      },
-    },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
