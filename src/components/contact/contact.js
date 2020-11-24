@@ -31,8 +31,8 @@ const Contact = () => {
                 src="https://maps.google.com/maps?q=angeethi%20patna&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 frameborder="0"
                 scrolling="no"
-                marginheight="0"
-                marginwidth="0"
+                marginHeight="0"
+                marginWidth="0"
               ></iframe>
             </div>
           </div>

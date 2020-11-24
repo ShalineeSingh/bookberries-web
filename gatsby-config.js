@@ -1,8 +1,31 @@
 module.exports = {
   siteMetadata: {
     title: `Bookberries`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@shalinee`,
+    description: `READ. RETURN. REPEAT! The bookstore offers your favourite titles, both new and pre-owned copies at very reasonable prices. Grab your copy now to satisfy your inner bookworm.`,
+    author: `@shalinee43`,
+    siteUrl: 'https://www.bookberries.in/',
+    keywords: [
+      "Book",
+      "Bookshop",
+      "Bookstore",
+      "books in patna",
+      "buy old books",
+      "buy books in patna",
+      "English novels in Patna",
+      "Patna",
+      "used books",
+      "cheap books",
+      "book shop",
+      "library in Patna",
+      "Bihar bookstore",
+      "novels",
+      "fiction",
+      "literature"
+    ],
+    classification: ["Bookstore", "Cheap books", "Shop", "Business", "Bookshop"],
+    audience: "all",
+    robots: "follow,index,noodp,noydir",
+    googlebot: "index, follow",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,6 +56,12 @@ module.exports = {
         theme_color: `#1D3557`,
         display: `minimal-ui`,
         icon: `src/images/logo-bg.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-SC4FZR2GHB",
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

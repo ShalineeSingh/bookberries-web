@@ -7,18 +7,37 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import {
+  Helmet
+} from "react-helmet"
+import {
+  useStaticQuery,
+  graphql
+} from "gatsby"
+import defaultOpenGraphImage from '../images/book_bag.png'
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
+function SEO({
+  description,
+  lang,
+  meta,
+  title
+}) {
+  const {
+    site
+  } = useStaticQuery(
+    graphql `
       query {
         site {
           siteMetadata {
             title
             description
             author
+            keywords
+            classification
+            audience
+            robots
+            googlebot
+            siteUrl
           }
         }
       }
@@ -26,18 +45,44 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const ogImageUrl = site.siteMetadata.siteUrl + defaultOpenGraphImage
 
-  return (
-    <Helmet
-      htmlAttributes={{
+  return ( <
+    Helmet htmlAttributes = {
+      {
         lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
+      }
+    }
+    title = {
+      title
+    }
+    titleTemplate = {
+      `%s | ${site.siteMetadata.title}`
+    }
+    meta = {
+      [{
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: "keywords",
+          content: site.siteMetadata.keywords.join(","),
+        },
+        {
+          name: "classification",
+          content: site.siteMetadata.classification.join(","),
+        },
+        {
+          name: "audience",
+          content: site.siteMetadata.audience,
+        },
+        {
+          name: "robots",
+          content: site.siteMetadata.robots,
+        },
+        {
+          name: "googlebot",
+          content: site.siteMetadata.googlebot,
         },
         {
           property: `og:title`,
@@ -67,7 +112,32 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+        {
+          property: `og:image`,
+          content: ogImageUrl,
+        },
+        {
+          property: `twitter:image`,
+          content: ogImageUrl,
+        },
+        {
+          property: `image`,
+          content: ogImageUrl,
+        },
+        {
+          property: `og:image:secure_url`,
+          content: ogImageUrl,
+        },
+        {
+          property: `og:image:url`,
+          content: ogImageUrl,
+        },
+        {
+          property: `og:image:secure`,
+          content: ogImageUrl,
+        },
+      ].concat(meta)
+    }
     />
   )
 }
