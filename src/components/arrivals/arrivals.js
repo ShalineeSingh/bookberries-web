@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import "./arrivals.scss"
 
@@ -16,7 +15,11 @@ const Arrivals = () => (
     <div className="row pb-5 mt-3">
       <div className="col-md-12 know-more-container text-center">
         <div className="know-more">
-          <a href="https://forms.gle/PjAoVxd9k2ukLvWv7" target="_blank">
+          <a
+            href="https://forms.gle/PjAoVxd9k2ukLvWv7"
+            target="_blank"
+            rel="noreferrer"
+          >
             Request Book
           </a>
         </div>

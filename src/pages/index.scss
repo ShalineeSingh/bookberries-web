@@ -11,6 +11,9 @@
   .text-container {
     position: relative;
     top: 30%;
+    @media (max-width: 768px) {
+      top: 0;
+    }
     .desc {
       line-height: 30px;
     }

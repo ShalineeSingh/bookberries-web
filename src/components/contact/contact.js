@@ -1,7 +1,5 @@
-import { Link, useStaticQuery } from "gatsby"
 import React from "react"
 import "./contact.scss"
-import { graphql } from "graphql"
 
 const Contact = () => {
   // const map = useStaticQuery(graphql`
@@ -26,6 +24,7 @@ const Contact = () => {
           <div className="mapouter">
             <div className="gmap_canvas">
               <iframe
+                title="location"
                 width="600"
                 height="300"
                 id="gmap_canvas"
