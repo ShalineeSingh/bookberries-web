@@ -1,0 +1,21 @@
+.contact-container {
+  min-height: 40vh;
+  .address-container {
+    &::after {
+      content: '';
+      background: url('../../images/books.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      right: 0;
+      height: 40vh;
+      width: 450px;
+      opacity: 0.6;
+      top: 0;
+      @media (max-width: 768px) {
+        height: 30vh;
+        width: 250px;
+      }
+    }
+  }
+}

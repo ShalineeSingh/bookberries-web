@@ -1,0 +1,24 @@
+@import './fonts.scss';
+@import '../components/variables.scss';
+.homepage-container {
+  min-height: calc(100vh - 60px);
+  background: url('../images/books-gradient.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 768px) {
+    min-height: calc(100vh - 200px);
+  }
+  .text-container {
+    position: relative;
+    top: 30%;
+    .desc {
+      line-height: 30px;
+    }
+  }
+  .coming-soon-container {
+    background-color: $marigold;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}

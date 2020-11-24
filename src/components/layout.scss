@@ -1,0 +1,79 @@
+@import "~bootstrap/scss/bootstrap";
+@import './variables.scss';
+@import '../pages/fonts.scss';
+body {
+  font-family: "HapppyMonkey", sans-serif;
+  font-size: 16px;
+  color: $honeydew;
+  overflow-x: hidden;
+  @media (max-width: $screen-sm) {
+    font-size: 14px;
+  }
+}
+
+.text-yellow {
+  color: $marigold;
+}
+
+.text-sky-blue {
+  color: $skyblue;
+}
+
+.layout-container {
+  background-color: $prussianblue;
+  @media (max-width: $screen-sm) {
+    padding: 8px;
+  }
+}
+
+.heading-4 {
+  font-size: 24px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+hr {
+  border-top: 1px solid $skyblue;
+  width: 97%;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.heading-1 {
+  font-family: "HomemeadeApple";
+  line-height: 80px;
+  font-size: 50px;
+  @include media-breakpoint-down(md) {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+.know-more-container {
+  .know-more {
+    border: 1px solid #F1FAEE;
+    display: inline;
+    padding: 10px 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      position: relative;
+      top: 50px;
+    }
+    &:hover {
+      background-color: $marigold;
+      color: $prussianblue;
+      box-shadow: 1px 1px 4px $honeydew;
+      transition: all .4s ease;
+      -webkit-transition: all .4s ease;
+    }
+  }
+}

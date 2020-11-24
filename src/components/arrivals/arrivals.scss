@@ -1,0 +1,12 @@
+@import "../variables.scss";
+.arrival-container {
+  .know-more-container {
+    .know-more {
+      position: relative;
+      bottom: 0;
+      a {
+        color: $honeydew;
+      }
+    }
+  }
+}

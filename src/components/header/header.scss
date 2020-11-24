@@ -1,0 +1,42 @@
+@import '../variables.scss';
+.header-container {
+  height: 60px;
+  position: relative;
+  @media (max-width: 768px) {
+    height: 115px;
+  }
+  .logo-img {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-left: 20px;
+    .header-text {
+      font-family: "HomemeadeApple";
+      font-size: 22px;
+      color: $honeydew;
+      position: relative;
+      top: -38px;
+      left: 60px;
+    }
+  }
+  .menu-items {
+    margin-right: 20px;
+    @media (max-width: 768px) {
+      text-align: center;
+      margin: 0;
+    }
+    .item {
+      padding: 10px 25px;
+      a {
+        color: white;
+        &:hover {
+          color: $honeydew;
+          text-decoration: underline;
+        }
+      }
+      @media (max-width: 768px) {
+        padding: 10px;
+      }
+    }
+  }
+}
