@@ -10,7 +10,7 @@ import Contact from "../components/contact/contact"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Bookberries Bookstore | Buy books at lowest prices in Patna" />
     {/* ADD HOMEPAGE  CODE HERE */}
     <div className="row homepage-container">
       <div className="col-md-12 text-center">
