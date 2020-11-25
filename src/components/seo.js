@@ -89,6 +89,10 @@ function SEO({
           content: title,
         },
         {
+          property: `og:site_name`,
+          content: title,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
