@@ -123,6 +123,7 @@ function SEO({
         {
           property: `image`,
           content: ogImageUrl,
+          itemprop: "image"
         },
         {
           property: `og:image:secure_url`,
@@ -135,6 +136,14 @@ function SEO({
         {
           property: `og:image:secure`,
           content: ogImageUrl,
+        },
+        {
+          property: `og:image:alt`,
+          content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
         },
       ].concat(meta)
     }

@@ -26,7 +26,7 @@ const IndexPage = () => (
         <div className="coming-soon-container">
           <p className="coming-soon-text mb-0">We are opening soon in Patna.</p>
           <p className="coming-soon-text mb-0">
-            @Kalyan Bhavan, Jagdeo Path Mor
+            @Above Allahabad Bank, Jagdeo Path Mor
           </p>
         </div>
       </div>

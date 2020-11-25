@@ -41,7 +41,7 @@ const Contact = () => {
           <p className="text-sky-blue mb-1">Address</p>
           <p>
             Third Floor,
-            <br /> Kalyan Bhavan, Jagdeo Path
+            <br /> Above Allahabad Bank, Jagdeo Path
             <br /> Bailey Road, Patna,
             <br />
             Bihar - 800 014
