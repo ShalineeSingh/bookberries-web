@@ -130,6 +130,14 @@ function SEO({
           itemprop: "image"
         },
         {
+          property: `og:image:width`,
+          content: 300
+        },
+        {
+          property: `og:image:height`,
+          content: 300
+        },
+        {
           property: `og:image:secure_url`,
           content: ogImageUrl,
         },
