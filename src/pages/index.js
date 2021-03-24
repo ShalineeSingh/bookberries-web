@@ -24,9 +24,9 @@ const IndexPage = () => (
       </div>
       <div className="col-md-12 text-center">
         <div className="coming-soon-container">
-          <p className="coming-soon-text mb-0">We are opening soon in Patna.</p>
+          <p className="coming-soon-text mb-0">Visit our store and check out our latest collection.</p>
           <p className="coming-soon-text mb-0">
-            @Above Allahabad Bank, Jagdeo Path Mor
+            @2nd Floor, Opp. Pillar-12, Above Allahabad Bank, Jagdeo Path Mor
           </p>
         </div>
       </div>

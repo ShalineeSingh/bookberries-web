@@ -40,14 +40,14 @@ const Contact = () => {
         <div className="col-md-6 address-container">
           <p className="text-sky-blue mb-1">Address</p>
           <p>
-            Third Floor,
+            Second Floor,
             <br /> Above Allahabad Bank, Jagdeo Path
-            <br /> Bailey Road, Patna,
+            <br /> Bailey Road, Patna, Opposite Pillar - 12
             <br />
             Bihar - 800 014
           </p>
-          <p className="text-sky-blue pt-3 mb-1">Contact</p>
-          <p>+91-7041700667</p>
+          <p className="text-sky-blue pt-3 mb-1">Contact/Whatsapp</p>
+          <p>+91-9431622920</p>
           <p className="text-sky-blue pt-3 mb-1">Email Address</p>
           <p>bookberriespatna@gmail.com</p>
         </div>
